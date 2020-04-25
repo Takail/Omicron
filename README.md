@@ -1,7 +1,7 @@
 # Omicron Pi Public
 <img width="35%" height="35%" src="https://i.gyazo.com/a47cfebc1f35131bd8c93907c9e7f8a5.png"></img>
 
-![GitHub repo size](https://img.shields.io/github/repo-size/k0vac/omicron?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/Takail/Omicron?style=flat-square)
 <h3><b>A program for manipulating and creating config files for SCP: Secret Laboratory Servers.</b></h3>
 
 
