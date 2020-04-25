@@ -6,6 +6,16 @@ using System.Threading.Tasks;
 
 namespace Omicron_Pi
 {
+    static class Extensions
+    {
+        public static T IfDefaultGiveMe<T>(this T value, T alternate)
+        {
+            if (value == null) return alternate;
+            if (value.Equals(default(T))) return alternate;
+            return value;
+        }
+    }
+
     public class Group
     {
 		public string name;

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label40.Text" xml:space="preserve">
-    <value>Welcome to Omicon Pi the  only solution youll ever need for creating new or editing existing Remote Admin config files.
+    <value>Welcome to Omicon Pi the only solution youll ever need for creating new or editing existing Remote Admin config files.
 To get started simply click on one of the buttons below to choose an existing config to edit or create a new config from the template.</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

@@ -33,8 +33,6 @@ namespace Omicron_Pi
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OmicronPiMainWindow));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.generalTabPage = new System.Windows.Forms.TabPage();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
@@ -141,7 +139,6 @@ namespace Omicron_Pi
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.generalTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -168,8 +165,6 @@ namespace Omicron_Pi
             // 
             // generalTabPage
             // 
-            this.generalTabPage.Controls.Add(this.pictureBox2);
-            this.generalTabPage.Controls.Add(this.label43);
             this.generalTabPage.Controls.Add(this.label42);
             this.generalTabPage.Controls.Add(this.label41);
             this.generalTabPage.Controls.Add(this.label40);
@@ -181,30 +176,6 @@ namespace Omicron_Pi
             this.generalTabPage.TabIndex = 3;
             this.generalTabPage.Text = "General";
             this.generalTabPage.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::OmicronMain.Properties.Resources.omicrontype;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 259);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(202, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
-            this.pictureBox2.MouseEnter += new System.EventHandler(this.PictureBox2_MouseEnter);
-            this.pictureBox2.MouseLeave += new System.EventHandler(this.PictureBox2_MouseLeave);
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(16, 216);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(976, 40);
-            this.label43.TabIndex = 8;
-            this.label43.Text = "Want to edit or create a config gameplay file? You can do that with this programm" +
-    "s sister application Omicon which you can find by clicking \r\nthe picture below.";
             // 
             // label42
             // 
@@ -554,9 +525,9 @@ namespace Omicron_Pi
             this.label35.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(431, 62);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(160, 15);
+            this.label35.Size = new System.Drawing.Size(153, 15);
             this.label35.TabIndex = 10;
-            this.label35.Text = "Group Required Kick Powner";
+            this.label35.Text = "Group Required Kick Power";
             // 
             // label36
             // 
@@ -753,9 +724,9 @@ namespace Omicron_Pi
             this.label28.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(431, 462);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(432, 45);
+            this.label28.Size = new System.Drawing.Size(429, 45);
             this.label28.TabIndex = 49;
-            this.label28.Text = "Player sensetive data access\r\nAllows you to see sensetive player data such as a p" +
+            this.label28.Text = "Player sensitive data access\r\nAllows you to see sensitive player data such as a p" +
     "layers auth token and IP in the\r\nrequest section of remoteadmin.";
             // 
             // ForceclassSelf
@@ -794,10 +765,10 @@ namespace Omicron_Pi
             this.label26.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(431, 357);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(390, 30);
+            this.label26.Size = new System.Drawing.Size(379, 30);
             this.label26.TabIndex = 47;
-            this.label26.Text = "Server Configs\r\nAllows you to edit config_gameplayer settings from within remotea" +
-    "dmin.";
+            this.label26.Text = "Server Configs\r\nAllows you to edit config_gameplay settings from within remoteadm" +
+    "in.";
             // 
             // GivingItems
             // 
@@ -878,9 +849,10 @@ namespace Omicron_Pi
             this.label25.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(431, 306);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(311, 30);
+            this.label25.Size = new System.Drawing.Size(352, 30);
             this.label25.TabIndex = 42;
-            this.label25.Text = "View hidden badges.\r\nAllows you the badges of people with their badge hidden.";
+            this.label25.Text = "View hidden badges.\r\nAllows you to view the badges of people with their badge hid" +
+    "den.";
             // 
             // RoundEvents
             // 
@@ -975,10 +947,10 @@ namespace Omicron_Pi
             this.label21.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(431, 75);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(327, 45);
+            this.label21.Size = new System.Drawing.Size(321, 45);
             this.label21.TabIndex = 38;
-            this.label21.Text = "Facility Management\r\nAllows you to use bypass, door manaagement, and intercom \r\nt" +
-    "imeout/reset commands.";
+            this.label21.Text = "Facility Management\r\nAllows you to use bypass, door management, and intercom \r\nti" +
+    "meout/reset commands.";
             // 
             // PlayersManagement
             // 
@@ -1114,9 +1086,9 @@ namespace Omicron_Pi
             this.label8.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(25, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(216, 30);
+            this.label8.Size = new System.Drawing.Size(223, 30);
             this.label8.TabIndex = 25;
-            this.label8.Text = "Kicking and short term banning\r\nAllows kicking and baning up to 1 hour.";
+            this.label8.Text = "Kicking and short term banning\r\nAllows kicking and banning up to 1 hour.";
             // 
             // label14
             // 
@@ -1136,7 +1108,7 @@ namespace Omicron_Pi
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(154, 30);
             this.label9.TabIndex = 26;
-            this.label9.Text = "Banning upto one day\r\nAllows banning up to 24hrs.";
+            this.label9.Text = "Banning up to one day\r\nAllows banning up to 24hrs.";
             // 
             // label13
             // 
@@ -1438,7 +1410,6 @@ namespace Omicron_Pi
             this.tabControl.ResumeLayout(false);
             this.generalTabPage.ResumeLayout(false);
             this.generalTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -1555,8 +1526,6 @@ namespace Omicron_Pi
         private Button deselectAllButton;
         private Button selectAllButton;
         private TabPage generalTabPage;
-        private PictureBox pictureBox2;
-        private Label label43;
         private Label label42;
         private Label label41;
         private Label label40;

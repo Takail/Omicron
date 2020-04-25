@@ -54,130 +54,153 @@ namespace Omicron_Pi
         /// </summary>
         private void initialize(string filePath)
         {
-            //If a SteamAPIKey is present save it
-            if (File.Exists("steamapikey"))
+            try
             {
-                steamApiKey = File.ReadAllText("steamapikey");
-                enableSteamInfo.Hide();
-                showSteamInfoCheckBox.Show();
-            }
-            //Collapse General page and open other options pages.
-            foreach (TabPage page in savedTabPages)
-            {
-                tabControl.TabPages.Add(page);
-            }
-            savedTabPages.Clear();
-            savedTabPages.Add(tabControl.TabPages[0]);
-            tabControl.TabPages.Remove(tabControl.TabPages[0]);
-
-            saveCFGButton.Enabled = true;
-            startAgainButton.Enabled = true;
-
-            //Define config file fields
-            configFileArray = File.ReadAllLines(filePath);
-            configFile = File.ReadAllText(filePath);
-            configFilePath = filePath;
-
-
-            // Tick Box Options
-            globalBadgeOptions.Add("enable_staff_access", configFileArray.First(i => i.Contains("enable_staff_access")).Contains("true"));
-            globalBadgeOptions.Add("enable_manager_access", configFileArray.First(i => i.Contains("enable_manager_access")).Contains("true"));
-            globalBadgeOptions.Add("enable_banteam_access", configFileArray.First(i => i.Contains("enable_banteam_access")).Contains("true"));
-            globalBadgeOptions.Add("enable_banteam_reserved_slots", configFileArray.First(i => i.Contains("enable_banteam_reserved_slots")).Contains("true"));
-            globalBadgeOptions.Add("enable_banteam_bypass_geoblocking", configFileArray.First(i => i.Contains("enable_banteam_bypass_geoblocking")).Contains("true"));
-            enable_staff_access.Checked = globalBadgeOptions["enable_staff_access"];
-            enable_manager_access.Checked = globalBadgeOptions["enable_manager_access"];
-            enable_banteam_access.Checked = globalBadgeOptions["enable_banteam_access"];
-            enable_banteam_reserved_slots.Checked = globalBadgeOptions["enable_banteam_reserved_slots"];
-            enable_banteam_bypass_geoblocking.Checked = globalBadgeOptions["enable_banteam_bypass_geoblocking"];
-
-            //Populate Group List
-            int rolesPos = Array.FindIndex(configFileArray, i => i.Contains("Roles")) + 1;
-            for (; ; )
-            {
-                if (!configFileArray[rolesPos].Contains("-")) break;
-                string groupName = configFileArray[rolesPos].Remove(0, 3).TrimEnd();
-                Groups.Items.Add(groupName);
-                assignmentGroupsCombo.Items.Add(groupName);
-                changeGroupCombo.Items.Add(groupName);
-                groupList.Add(new Group
+                //If a SteamAPIKey is present save it
+                if (File.Exists("steamapikey"))
                 {
-                    name = groupName,
-                    badge = "",
-                    badgeColour = "default",
-                    badgeCover = false,
-                    badgeHidden = false,
-                    kickPower = 0,
-                    requiredKickPower = 0,
-                    KickingAndShortTermBanning = false,
-                    BanningUpToDay = false,
-                    LongTermBanning = false,
-                    ForceclassSelf = false,
-                    ForceclassToSpectator = false,
-                    ForceclassWithoutRestrictions = false,
-                    GivingItems = false,
-                    WarheadEvents = false,
-                    RespawnEvents = false,
-                    RoundEvents = false,
-                    SetGroup = false,
-                    GameplayData = false,
-                    Overwatch = false,
-                    FacilityManagement = false,
-                    PlayersManagement = false,
-                    PermissionsManagement = false,
-                    ServerConsoleCommands = false,
-                    ViewHiddenBadges = false,
-                    ServerConfigs = false,
-                    Broadcasting = false,
-                    PlayerSensitiveDataAccess = false,
-                    Noclip = false,
-                    AFKImmunity = false
-                });
-                rolesPos++;
-            }
-
-            //Define Group Paramaters
-            foreach (Group group in groupList)
-            {
-                groupNameList.Add(group.name);
-                group.badge = configFileArray.First(i => i.Contains(group.name + "_badge")).Split(':')[1].Remove(0, 1);
-                group.badgeColour = configFileArray.First(i => i.Contains(group.name + "_color")).Split(':')[1].Remove(0, 1);
-                group.kickPower = int.TryParse(configFileArray.First(i => i.Contains(group.name + "_kick_power")).Split(':')[1].Remove(0, 1), out int a) ? a : 0;
-                group.requiredKickPower = int.TryParse(configFileArray.First(i => i.Contains(group.name + "_required_kick_power")).Split(':')[1].Remove(0, 1), out int b) ? b : 0;
-                group.badgeCover = bool.TryParse(configFileArray.First(i => i.Contains(group.name + "_cover")).Split(':')[1].Remove(0, 1), out bool x) ? x : true;
-                group.badgeHidden = bool.TryParse(configFileArray.First(i => i.Contains(group.name + "_hidden")).Split(':')[1].Remove(0, 1), out bool y) ? y : false;
-            }
-
-            //Define Permissions
-            int permissionsPos = Array.FindIndex(configFileArray, i => i.Contains("Permissions:")) + 1;
-
-            for (; ; )
-            {
-                if (configFileArray.Count() == permissionsPos) break;
-                if (!configFileArray[permissionsPos].Contains("-")) break;
-                string line = configFileArray[permissionsPos].Replace(" ", "").Replace("-", "").Replace("[", "").Replace("]", "");
-                string permName = line.Split(':')[0];
-                List<string> permMembers = new List<string>();
-                foreach (string x in line.Split(':')[1].Split(','))
-                {
-                    if (string.IsNullOrEmpty(x)) continue;
-                    permMembers.Add(x);
+                    steamApiKey = File.ReadAllText("steamapikey");
+                    enableSteamInfo.Hide();
+                    showSteamInfoCheckBox.Show();
                 }
-                permissionsDict.Add(permName, permMembers);
-                permissionsPos++;
-            }
+                //Collapse General page and open other options pages.
+                foreach (TabPage page in savedTabPages)
+                {
+                    tabControl.TabPages.Add(page);
+                }
+                savedTabPages.Clear();
+                savedTabPages.Add(tabControl.TabPages[0]);
+                tabControl.TabPages.Remove(tabControl.TabPages[0]);
 
-            //Get Users
-            int membersPos = Array.FindIndex(configFileArray, i => i.Contains("Members:")) + 1;
-            for (; ; )
-            {
-                if (configFileArray.Count() == membersPos) break;
-                if (!configFileArray[membersPos].Contains("-")) break;
-                string line = configFileArray[membersPos].Replace(" ", "").Replace("-", "").Replace("[", "").Replace("]", "");
-                string userID = line.Split(':')[0];
-                string userGroup = line.Split(':')[1];
-                usersList.Add(userID, userGroup);
-                membersPos++;
+                saveCFGButton.Enabled = true;
+                startAgainButton.Enabled = true;
+
+                //Define config file fields
+                configFileArray = File.ReadAllLines(filePath);
+                configFile = File.ReadAllText(filePath);
+                configFilePath = filePath;
+
+
+                // Tick Box Options
+                globalBadgeOptions.Add("enable_staff_access", configFileArray.First(i => i.Contains("enable_staff_access")).Contains("true"));
+                globalBadgeOptions.Add("enable_manager_access", configFileArray.First(i => i.Contains("enable_manager_access")).Contains("true"));
+                globalBadgeOptions.Add("enable_banteam_access", configFileArray.First(i => i.Contains("enable_banteam_access")).Contains("true"));
+                globalBadgeOptions.Add("enable_banteam_reserved_slots", configFileArray.First(i => i.Contains("enable_banteam_reserved_slots")).Contains("true"));
+                globalBadgeOptions.Add("enable_banteam_bypass_geoblocking", configFileArray.First(i => i.Contains("enable_banteam_bypass_geoblocking")).Contains("true"));
+                enable_staff_access.Checked = globalBadgeOptions["enable_staff_access"];
+                enable_manager_access.Checked = globalBadgeOptions["enable_manager_access"];
+                enable_banteam_access.Checked = globalBadgeOptions["enable_banteam_access"];
+                enable_banteam_reserved_slots.Checked = globalBadgeOptions["enable_banteam_reserved_slots"];
+                enable_banteam_bypass_geoblocking.Checked = globalBadgeOptions["enable_banteam_bypass_geoblocking"];
+
+                //Populate Group List
+                int rolesPos = Array.FindIndex(configFileArray, i => i.Contains("Roles")) + 1;
+                for (; ; )
+                {
+                    if (configFileArray[rolesPos].Contains("#"))
+                    {
+                        rolesPos++;
+                        continue;
+                    }
+                    if (!configFileArray[rolesPos].Contains("-")) break;
+                    string groupName = configFileArray[rolesPos].Remove(0, 3).TrimEnd();
+                    Groups.Items.Add(groupName);
+                    assignmentGroupsCombo.Items.Add(groupName);
+                    changeGroupCombo.Items.Add(groupName);
+                    groupList.Add(new Group
+                    {
+                        name = groupName,
+                        badge = "",
+                        badgeColour = "default",
+                        badgeCover = false,
+                        badgeHidden = false,
+                        kickPower = 0,
+                        requiredKickPower = 0,
+                        KickingAndShortTermBanning = false,
+                        BanningUpToDay = false,
+                        LongTermBanning = false,
+                        ForceclassSelf = false,
+                        ForceclassToSpectator = false,
+                        ForceclassWithoutRestrictions = false,
+                        GivingItems = false,
+                        WarheadEvents = false,
+                        RespawnEvents = false,
+                        RoundEvents = false,
+                        SetGroup = false,
+                        GameplayData = false,
+                        Overwatch = false,
+                        FacilityManagement = false,
+                        PlayersManagement = false,
+                        PermissionsManagement = false,
+                        ServerConsoleCommands = false,
+                        ViewHiddenBadges = false,
+                        ServerConfigs = false,
+                        Broadcasting = false,
+                        PlayerSensitiveDataAccess = false,
+                        Noclip = false,
+                        AFKImmunity = false
+                    });
+                    rolesPos++;
+                }
+
+                //Define Group Paramaters
+                foreach (Group group in groupList)
+                {
+                    groupNameList.Add(group.name);
+                    group.badge = configFileArray.First(i => i.Contains(group.name + "_badge")).Split(':')[1].Remove(0, 1);
+                    group.badgeColour = configFileArray.First(i => i.Contains(group.name + "_color")).Split(':')[1].Remove(0, 1);
+                    group.kickPower = int.TryParse(configFileArray.FirstOrDefault(i => i.Contains(group.name + "_kick_power")).IfDefaultGiveMe(group.name + "_kick_power: 0").Split(':')[1].Remove(0, 1), out int a) ? a : 0;
+                    group.requiredKickPower = int.TryParse(configFileArray.FirstOrDefault(i => i.Contains(group.name + "_required_kick_power")).IfDefaultGiveMe(group.name + "_required_kick_power: 0").Split(':')[1].Remove(0, 1), out int b) ? b : 0;
+                    group.badgeCover = bool.TryParse(configFileArray.First(i => i.Contains(group.name + "_cover")).Split(':')[1].Remove(0, 1), out bool x) ? x : true;
+                    group.badgeHidden = bool.TryParse(configFileArray.First(i => i.Contains(group.name + "_hidden")).Split(':')[1].Remove(0, 1), out bool y) ? y : false;
+                }
+
+                //Define Permissions
+                int permissionsPos = Array.FindIndex(configFileArray, i => i.Contains("Permissions:")) + 1;
+
+                for (; ; )
+                {
+                    if (configFileArray[permissionsPos].Contains("#"))
+                    {
+                        permissionsPos++;
+                        continue;
+                    }
+                    if (configFileArray.Count() == permissionsPos) break;
+                    if (!configFileArray[permissionsPos].Contains("-")) break;
+                    string line = configFileArray[permissionsPos].Replace(" ", "").Replace("-", "").Replace("[", "").Replace("]", "");
+                    string permName = line.Split(':')[0];
+                    List<string> permMembers = new List<string>();
+                    foreach (string x in line.Split(':')[1].Split(','))
+                    {
+                        if (string.IsNullOrEmpty(x)) continue;
+                        permMembers.Add(x);
+                    }
+                    permissionsDict.Add(permName, permMembers);
+                    permissionsPos++;
+                }
+
+                //Get Users
+                int membersPos = Array.FindIndex(configFileArray, i => i.Contains("Members:")) + 1;
+                for (; ; )
+                {
+                    if (configFileArray[membersPos].Contains("#"))
+                    {
+                        membersPos++;
+                        continue;
+                    }
+                    if (configFileArray.Count() == membersPos) break;
+                    if (!configFileArray[membersPos].Contains("-")) break;
+                    string line = configFileArray[membersPos].Replace(" ", "").Replace("-", "").Replace("[", "").Replace("]", "");
+                    string userID = line.Split(':')[0];
+                    string userGroup = line.Split(':')[1];
+                    usersList.Add(userID, userGroup);
+                    membersPos++;
+                }
+            }
+            catch (Exception e) 
+            {   
+                File.WriteAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ErrorLog.txt"), e.ToString());
+                MessageBox.Show("An error occured when parsing your config file. Please ensure the file is a working config_remoteadmin. If you believe that the files does work please contact @Takail#6969 on Discord");
             }
         }
 
@@ -189,13 +212,9 @@ namespace Omicron_Pi
         }
 
         #region Picture box methods
-        private void PictureBox1_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://github.com/takail/omicron-pi-public");
+        private void PictureBox1_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://github.com/takail/omicron");
         private void PictureBox1_MouseEnter(object sender, EventArgs e) => Cursor = Cursors.Hand;
         private void PictureBox1_MouseLeave(object sender, EventArgs e) => Cursor = Cursors.Arrow;
-
-        private void PictureBox2_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://github.com/k0vac/omicron");
-        private void PictureBox2_MouseEnter(object sender, EventArgs e) => Cursor = Cursors.Hand;
-        private void PictureBox2_MouseLeave(object sender, EventArgs e) => Cursor = Cursors.Arrow;
         #endregion
 
         #region Group box methods
@@ -395,6 +414,7 @@ namespace Omicron_Pi
             {
                 strb.AppendLine($" - {perm.Key}: [{string.Join(", ", perm.Value)}]");
             }
+            strb.AppendLine();
 
             if(configFilePath == @".\TemplateConfig\DO NOT EDIT THIS FILE.txt")
             {
@@ -632,7 +652,7 @@ namespace Omicron_Pi
                 enableSteamInfo_Click(frm, null);
                 return;
             }
-            File.WriteAllText("steamapikey", Globals.inputResult);
+            File.WriteAllText(Path.Combine(System.Reflection.Assembly.GetEntryAssembly().Location, "steamapikey"), Globals.inputResult);
             steamApiKey = Globals.inputResult;
             enableSteamInfo.Hide();
             showSteamInfoCheckBox.Show();
@@ -648,7 +668,7 @@ namespace Omicron_Pi
                 steamNameLabel.Text = "";
                 return;
             }
-            if (((string)Users.SelectedItem).Length == 23)
+            if (Users.Items.Count > 0 && ((string)Users.SelectedItem).Length == 23)
             {
                 Player player = getSteamInfo(((string)Users.SelectedItem).Split('@')[0]);
                 steamAvatar.ImageLocation = player.avatarfull;
