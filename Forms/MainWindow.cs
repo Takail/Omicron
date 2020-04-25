@@ -261,6 +261,12 @@ namespace Omicron_Pi
                     Groups_DoubleClick(listBox, null);
                     return;
                 }
+                if (string.IsNullOrWhiteSpace(Globals.inputResult))
+                {
+                    MessageBox.Show("Please enter a rank name.");
+                    Groups_DoubleClick(listBox, null);
+                    return;
+                }
                 foreach (KeyValuePair<string, List<string>> perm in permissionsDict)
                 {
                     if (perm.Value.Contains(listBox.SelectedItem))
@@ -652,7 +658,7 @@ namespace Omicron_Pi
                 enableSteamInfo_Click(frm, null);
                 return;
             }
-            File.WriteAllText(Path.Combine(System.Reflection.Assembly.GetEntryAssembly().Location, "steamapikey"), Globals.inputResult);
+            File.WriteAllText(Path.Combine(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "steamapikey")), Globals.inputResult);
             steamApiKey = Globals.inputResult;
             enableSteamInfo.Hide();
             showSteamInfoCheckBox.Show();

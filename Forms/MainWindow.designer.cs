@@ -851,8 +851,8 @@ namespace Omicron_Pi
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(352, 30);
             this.label25.TabIndex = 42;
-            this.label25.Text = "View hidden badges.\r\nAllows you to view the badges of people with their badge hid" +
-    "den.";
+            this.label25.Text = "View hidden badges\r\nAllows you to view the badges of people with their badge hidd" +
+    "en.";
             // 
             // RoundEvents
             // 
@@ -1098,7 +1098,7 @@ namespace Omicron_Pi
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(149, 30);
             this.label14.TabIndex = 31;
-            this.label14.Text = "Give items.\r\nAllows you to spawn items.";
+            this.label14.Text = "Give items\r\nAllows you to spawn items.";
             // 
             // label9
             // 
@@ -1118,7 +1118,7 @@ namespace Omicron_Pi
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(235, 30);
             this.label13.TabIndex = 30;
-            this.label13.Text = "Forceclass without restrictions.\r\nAllows you to forceclass others to any class.";
+            this.label13.Text = "Forceclass without restrictions\r\nAllows you to forceclass others to any class.";
             // 
             // label10
             // 
@@ -1138,7 +1138,7 @@ namespace Omicron_Pi
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(264, 30);
             this.label12.TabIndex = 29;
-            this.label12.Text = "Forceclass to spectator.\r\nAllows you to forceclass others to spectator only.";
+            this.label12.Text = "Forceclass to spectator\r\nAllows you to forceclass others to spectator only.";
             // 
             // label11
             // 
