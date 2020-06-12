@@ -61,6 +61,26 @@ namespace OmicronMain.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to #Let&apos;s assign roles (you can modify them and create custom roles below)
+        ///#UserID format is SteamId64Here@steam, DiscordUserIDHere@discord, etc...
+        ///Members:
+        ///
+        ///#Should Secret Lab development staff be able to use the Remote Admin?
+        ///enable_staff_access: false
+        ///
+        ///#Should Secret Lab CEO and managers be able to use Remote Admin? (We do not abuse our powers) 
+        ///enable_manager_access: true
+        ///
+        ///#Allow remote admin access for the banning team, to allow them searching and fightung cheaters globally
+        ///enable_banteam_acces [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DO_NOT_EDIT_THIS_FILE {
+            get {
+                return ResourceManager.GetString("DO_NOT_EDIT_THIS_FILE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap omicronpifull {

@@ -9,6 +9,7 @@ using System.Net;
 using Newtonsoft.Json;
 using OmicronMain;
 using System.Drawing.Printing;
+using OmicronMain.Properties;
 
 namespace Omicron_Pi
 {
@@ -45,12 +46,8 @@ namespace Omicron_Pi
         /// </summary>
         private void tabControlMethod()
         {
-            // Currently broken so I will disable it.
-            createNewConfigButton.Visible = false;
-            //end
-
             savedTabPages.Clear();
-            //Hide tabs that rent General
+            //Hide tabs that arent General
             foreach (TabPage tab in tabControl.TabPages)
             {
                 if (tab == tabControl.TabPages[0]) continue;
@@ -634,10 +631,11 @@ namespace Omicron_Pi
         private void openExistingConfigButton_Click(object sender, EventArgs e) => openFileDialog1.ShowDialog();
         private void createNewConfigButton_Click(object sender, EventArgs e)
         {
-            if (Directory.Exists(userPath + @"\AppData\LocalLow\Omicron") == false)
+            if (!Directory.Exists(userPath + @"\AppData\LocalLow\Omicron"))
                 Directory.CreateDirectory(userPath + @"\AppData\LocalLow\Omicron");
 
             File.Create(userPath + @"\AppData\LocalLow\Omicron\temp_config_DO_NOT_EDIT_THIS_FILE.txt").Close();
+            File.WriteAllText(userPath + @"\AppData\LocalLow\Omicron\temp_config_DO_NOT_EDIT_THIS_FILE.txt", Resources.DO_NOT_EDIT_THIS_FILE);
             initialize(userPath + @"\AppData\LocalLow\Omicron\temp_config_DO_NOT_EDIT_THIS_FILE.txt");
         }
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
