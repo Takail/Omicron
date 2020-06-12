@@ -6,6 +6,8 @@ namespace OmicronMain
 {
     public partial class Launcher : Form
     {
+        public static string gameplayConfigPath = null;
+        public static string remoteAdmConfigPath = null;
         public Launcher()
         {
             InitializeComponent();
@@ -26,5 +28,7 @@ namespace OmicronMain
         }
 
         private void omicronGithub_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://github.com/k0vac/Omicron");
+
+        private void Launcher_FormClosed(object sender, FormClosedEventArgs e) => Application.Exit();
     }
 }

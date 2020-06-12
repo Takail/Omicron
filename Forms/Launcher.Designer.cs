@@ -46,7 +46,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(48, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 15);
+            this.label1.Size = new System.Drawing.Size(265, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Omicron is designed for creating config_gameplay files.";
             // 
@@ -55,17 +55,17 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(446, 146);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(395, 15);
+            this.label2.Size = new System.Drawing.Size(347, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Omicron Pi is designed for editing and creating config_remoteadmin files.";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Noto Sans", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(236, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(343, 51);
+            this.label3.Size = new System.Drawing.Size(324, 42);
             this.label3.TabIndex = 4;
             this.label3.Text = "Program Selection";
             // 
@@ -127,7 +127,7 @@
             // 
             // Launcher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::OmicronMain.Properties.Resources.omicronsplashscreenBg;
@@ -142,11 +142,12 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Launcher";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Launcher";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

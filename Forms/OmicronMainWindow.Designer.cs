@@ -165,7 +165,7 @@
             this.generateButton.Cursor = System.Windows.Forms.Cursors.Default;
             this.generateButton.FlatAppearance.BorderSize = 0;
             this.generateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.generateButton.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold);
+            this.generateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.generateButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.generateButton.Location = new System.Drawing.Point(571, 259);
             this.generateButton.Name = "generateButton";
@@ -182,7 +182,7 @@
             this.button2.Enabled = false;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Noto Sans", 12F, System.Drawing.FontStyle.Bold);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Location = new System.Drawing.Point(565, 259);
             this.button2.Name = "button2";
@@ -197,7 +197,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.tabControl1.Location = new System.Drawing.Point(13, 12);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
@@ -223,10 +223,10 @@
             this.tabPage1.Controls.Add(this.SrvNameLabel);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.ImageIndex = 0;
-            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(670, 210);
+            this.tabPage1.Size = new System.Drawing.Size(670, 212);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Server info";
             // 
@@ -236,7 +236,7 @@
             this.contactEmailTextBox.Location = new System.Drawing.Point(167, 144);
             this.contactEmailTextBox.MaxLength = 255;
             this.contactEmailTextBox.Name = "contactEmailTextBox";
-            this.contactEmailTextBox.Size = new System.Drawing.Size(337, 22);
+            this.contactEmailTextBox.Size = new System.Drawing.Size(337, 20);
             this.contactEmailTextBox.TabIndex = 5;
             this.contactEmailTextBox.Text = "example@example.com";
             this.contactEmailTextBox.Leave += new System.EventHandler(this.contactEmailTextBox_Leave);
@@ -244,10 +244,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(6, 146);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 15);
+            this.label3.Size = new System.Drawing.Size(86, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "eMail Address";
             // 
@@ -257,7 +257,7 @@
             this.bindIpTextbox.Location = new System.Drawing.Point(167, 116);
             this.bindIpTextbox.MaxLength = 255;
             this.bindIpTextbox.Name = "bindIpTextbox";
-            this.bindIpTextbox.Size = new System.Drawing.Size(337, 22);
+            this.bindIpTextbox.Size = new System.Drawing.Size(337, 20);
             this.bindIpTextbox.TabIndex = 4;
             this.bindIpTextbox.Text = "0.0.0.0";
             this.bindIpTextbox.Leave += new System.EventHandler(this.contactEmailTextBox_Leave);
@@ -265,10 +265,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label11.Location = new System.Drawing.Point(6, 118);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(66, 15);
+            this.label11.Size = new System.Drawing.Size(62, 13);
             this.label11.TabIndex = 16;
             this.label11.Text = "IPv4 Bind";
             // 
@@ -287,7 +287,7 @@
             this.pasteIdTextBox.Location = new System.Drawing.Point(167, 89);
             this.pasteIdTextBox.MaxLength = 255;
             this.pasteIdTextBox.Name = "pasteIdTextBox";
-            this.pasteIdTextBox.Size = new System.Drawing.Size(337, 22);
+            this.pasteIdTextBox.Size = new System.Drawing.Size(337, 20);
             this.pasteIdTextBox.TabIndex = 3;
             this.pasteIdTextBox.Text = "7wV681fT";
             this.pasteIdTextBox.TextChanged += new System.EventHandler(this.pasteIdTextBox_TextChanged);
@@ -299,7 +299,7 @@
             this.ipTextBox.Location = new System.Drawing.Point(167, 62);
             this.ipTextBox.MaxLength = 255;
             this.ipTextBox.Name = "ipTextBox";
-            this.ipTextBox.Size = new System.Drawing.Size(337, 22);
+            this.ipTextBox.Size = new System.Drawing.Size(337, 20);
             this.ipTextBox.TabIndex = 2;
             this.ipTextBox.Text = "auto";
             this.ipTextBox.Leave += new System.EventHandler(this.contactEmailTextBox_Leave);
@@ -310,7 +310,7 @@
             this.serverTitleTextBox.Location = new System.Drawing.Point(167, 36);
             this.serverTitleTextBox.MaxLength = 1000;
             this.serverTitleTextBox.Name = "serverTitleTextBox";
-            this.serverTitleTextBox.Size = new System.Drawing.Size(337, 22);
+            this.serverTitleTextBox.Size = new System.Drawing.Size(337, 20);
             this.serverTitleTextBox.TabIndex = 1;
             this.serverTitleTextBox.Text = "MyServer";
             this.serverTitleTextBox.Leave += new System.EventHandler(this.contactEmailTextBox_Leave);
@@ -319,12 +319,12 @@
             // 
             this.pasteSyntaxLabel.AccessibleName = "LABel";
             this.pasteSyntaxLabel.AutoSize = true;
-            this.pasteSyntaxLabel.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.pasteSyntaxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.pasteSyntaxLabel.ForeColor = System.Drawing.Color.ForestGreen;
             this.pasteSyntaxLabel.Location = new System.Drawing.Point(510, 91);
             this.pasteSyntaxLabel.Name = "pasteSyntaxLabel";
             this.pasteSyntaxLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pasteSyntaxLabel.Size = new System.Drawing.Size(117, 15);
+            this.pasteSyntaxLabel.Size = new System.Drawing.Size(108, 13);
             this.pasteSyntaxLabel.TabIndex = 7;
             this.pasteSyntaxLabel.Text = "Corrected Syntax.";
             this.pasteSyntaxLabel.Visible = false;
@@ -332,20 +332,20 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label7.Location = new System.Drawing.Point(6, 175);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 15);
+            this.label7.Size = new System.Drawing.Size(105, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "Enable Whitelists";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label5.Location = new System.Drawing.Point(6, 91);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 15);
+            this.label5.Size = new System.Drawing.Size(73, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "Pastebin ID";
             // 
@@ -355,7 +355,7 @@
             this.serverNameTextBox.Location = new System.Drawing.Point(167, 11);
             this.serverNameTextBox.MaxLength = 1000;
             this.serverNameTextBox.Name = "serverNameTextBox";
-            this.serverNameTextBox.Size = new System.Drawing.Size(337, 22);
+            this.serverNameTextBox.Size = new System.Drawing.Size(337, 20);
             this.serverNameTextBox.TabIndex = 0;
             this.serverNameTextBox.Text = "MyServer";
             this.serverNameTextBox.Leave += new System.EventHandler(this.contactEmailTextBox_Leave);
@@ -363,30 +363,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(6, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 15);
+            this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Server IP";
             // 
             // SrvNameLabel
             // 
             this.SrvNameLabel.AutoSize = true;
-            this.SrvNameLabel.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.SrvNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.SrvNameLabel.Location = new System.Drawing.Point(6, 13);
             this.SrvNameLabel.Name = "SrvNameLabel";
-            this.SrvNameLabel.Size = new System.Drawing.Size(102, 15);
+            this.SrvNameLabel.Size = new System.Drawing.Size(95, 13);
             this.SrvNameLabel.TabIndex = 9;
             this.SrvNameLabel.Text = "Name of Server";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(6, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 15);
+            this.label2.Size = new System.Drawing.Size(124, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Server Title In-Game";
             // 
@@ -408,10 +408,10 @@
             this.tabPage2.Controls.Add(this.portQueueTextBox);
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.ImageIndex = 1;
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(670, 210);
+            this.tabPage2.Size = new System.Drawing.Size(670, 212);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Networking";
             // 
@@ -419,12 +419,12 @@
             // 
             this.offlineModeLabel.AccessibleName = "UnstableWarn";
             this.offlineModeLabel.AutoSize = true;
-            this.offlineModeLabel.Font = new System.Drawing.Font("Noto Sans", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.offlineModeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.offlineModeLabel.ForeColor = System.Drawing.Color.Firebrick;
             this.offlineModeLabel.Location = new System.Drawing.Point(188, 44);
             this.offlineModeLabel.Name = "offlineModeLabel";
             this.offlineModeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.offlineModeLabel.Size = new System.Drawing.Size(458, 13);
+            this.offlineModeLabel.Size = new System.Drawing.Size(456, 12);
             this.offlineModeLabel.TabIndex = 38;
             this.offlineModeLabel.Text = "Public List, UserID based bans, reserved slots, whitelist and RA authentication d" +
     "isabled.";
@@ -441,7 +441,7 @@
             0,
             0});
             this.rateLimitNumericUpDown.Name = "rateLimitNumericUpDown";
-            this.rateLimitNumericUpDown.Size = new System.Drawing.Size(52, 18);
+            this.rateLimitNumericUpDown.Size = new System.Drawing.Size(52, 16);
             this.rateLimitNumericUpDown.TabIndex = 27;
             this.rateLimitNumericUpDown.Value = new decimal(new int[] {
             4,
@@ -461,10 +461,10 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label35.Location = new System.Drawing.Point(6, 162);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(141, 15);
+            this.label35.Size = new System.Drawing.Size(129, 13);
             this.label35.TabIndex = 25;
             this.label35.Text = "Hide From Server List";
             // 
@@ -483,10 +483,10 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label31.Location = new System.Drawing.Point(6, 43);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(86, 15);
+            this.label31.Size = new System.Drawing.Size(78, 13);
             this.label31.TabIndex = 25;
             this.label31.Text = "Online Mode";
             // 
@@ -504,10 +504,10 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label34.Location = new System.Drawing.Point(6, 113);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(149, 15);
+            this.label34.Size = new System.Drawing.Size(138, 13);
             this.label34.TabIndex = 25;
             this.label34.Text = "Rate Limit Connections";
             // 
@@ -525,10 +525,10 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label32.Location = new System.Drawing.Point(6, 90);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(96, 15);
+            this.label32.Size = new System.Drawing.Size(85, 13);
             this.label32.TabIndex = 25;
             this.label32.Text = "Forward Ports";
             // 
@@ -546,20 +546,20 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label8.Location = new System.Drawing.Point(6, 67);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 15);
+            this.label8.Size = new System.Drawing.Size(93, 13);
             this.label8.TabIndex = 25;
             this.label8.Text = "Reserved Slots";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label33.Location = new System.Drawing.Point(6, 138);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(152, 15);
+            this.label33.Size = new System.Drawing.Size(143, 13);
             this.label33.TabIndex = 19;
             this.label33.Text = "Rate Limit Interval (X/s)";
             // 
@@ -570,17 +570,17 @@
             this.portQueueTextBox.MaxLength = 1000;
             this.portQueueTextBox.Name = "portQueueTextBox";
             this.portQueueTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.portQueueTextBox.Size = new System.Drawing.Size(232, 22);
+            this.portQueueTextBox.Size = new System.Drawing.Size(232, 20);
             this.portQueueTextBox.TabIndex = 20;
             this.portQueueTextBox.Text = "7777,7778,7779";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(6, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 15);
+            this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 19;
             this.label4.Text = "Port Queue";
             // 
@@ -625,17 +625,17 @@
             this.tabPage3.Controls.Add(this.maxPlayersNUpDown);
             this.tabPage3.Controls.Add(this.MaxPlayersLabel);
             this.tabPage3.ImageIndex = 2;
-            this.tabPage3.Location = new System.Drawing.Point(4, 27);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(670, 210);
+            this.tabPage3.Size = new System.Drawing.Size(670, 212);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Gameplay";
             // 
             // nineFourteenModeCheckBox
             // 
             this.nineFourteenModeCheckBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.nineFourteenModeCheckBox.Font = new System.Drawing.Font("Noto Sans", 7.249999F, System.Drawing.FontStyle.Bold);
+            this.nineFourteenModeCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.249999F, System.Drawing.FontStyle.Bold);
             this.nineFourteenModeCheckBox.FormattingEnabled = true;
             this.nineFourteenModeCheckBox.Items.AddRange(new object[] {
             "Dropped (No Player Teleport)",
@@ -646,7 +646,7 @@
             "Inventory"});
             this.nineFourteenModeCheckBox.Location = new System.Drawing.Point(536, 14);
             this.nineFourteenModeCheckBox.Name = "nineFourteenModeCheckBox";
-            this.nineFourteenModeCheckBox.Size = new System.Drawing.Size(134, 22);
+            this.nineFourteenModeCheckBox.Size = new System.Drawing.Size(134, 21);
             this.nineFourteenModeCheckBox.Sorted = true;
             this.nineFourteenModeCheckBox.TabIndex = 55;
             this.nineFourteenModeCheckBox.SelectedIndexChanged += new System.EventHandler(this.nineFourteenModeComboBox_SelectedIndexChanged);
@@ -676,10 +676,10 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label30.Location = new System.Drawing.Point(6, 42);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(150, 15);
+            this.label30.Size = new System.Drawing.Size(140, 13);
             this.label30.TabIndex = 52;
             this.label30.Text = "Pocket Dimension Exits";
             // 
@@ -717,20 +717,20 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label50.Location = new System.Drawing.Point(350, 18);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(94, 15);
+            this.label50.Size = new System.Drawing.Size(91, 13);
             this.label50.TabIndex = 48;
             this.label50.Text = "SCP-914 Mode";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label26.Location = new System.Drawing.Point(350, 47);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(139, 15);
+            this.label26.Size = new System.Drawing.Size(133, 13);
             this.label26.TabIndex = 48;
             this.label26.Text = "SCP Grenade Damage";
             // 
@@ -750,10 +750,10 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label25.Location = new System.Drawing.Point(350, 72);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(159, 15);
+            this.label25.Size = new System.Drawing.Size(148, 13);
             this.label25.TabIndex = 46;
             this.label25.Text = "Human Grenade Damage";
             // 
@@ -773,7 +773,7 @@
             0,
             0});
             this.warheadTimeNUpDown.Name = "warheadTimeNUpDown";
-            this.warheadTimeNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.warheadTimeNUpDown.Size = new System.Drawing.Size(52, 16);
             this.warheadTimeNUpDown.TabIndex = 45;
             this.warheadTimeNUpDown.Value = new decimal(new int[] {
             90,
@@ -784,10 +784,10 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label24.Location = new System.Drawing.Point(350, 97);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(185, 15);
+            this.label24.Size = new System.Drawing.Size(173, 13);
             this.label24.TabIndex = 44;
             this.label24.Text = "Warhead Detonation Time (s)";
             // 
@@ -814,10 +814,10 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label37.Location = new System.Drawing.Point(350, 192);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(155, 15);
+            this.label37.Size = new System.Drawing.Size(147, 13);
             this.label37.TabIndex = 42;
             this.label37.Text = "Keep Items After Escape";
             // 
@@ -833,20 +833,20 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label36.Location = new System.Drawing.Point(7, 192);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(161, 15);
+            this.label36.Size = new System.Drawing.Size(148, 13);
             this.label36.TabIndex = 42;
             this.label36.Text = "Disable Decontamination";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label23.Location = new System.Drawing.Point(350, 121);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(86, 15);
+            this.label23.Size = new System.Drawing.Size(76, 13);
             this.label23.TabIndex = 42;
             this.label23.Text = "Friendly Fire";
             // 
@@ -866,7 +866,7 @@
             0,
             0});
             this.icomSpeechTimeNUpDown.Name = "icomSpeechTimeNUpDown";
-            this.icomSpeechTimeNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.icomSpeechTimeNUpDown.Size = new System.Drawing.Size(52, 16);
             this.icomSpeechTimeNUpDown.TabIndex = 41;
             this.icomSpeechTimeNUpDown.Value = new decimal(new int[] {
             20,
@@ -877,10 +877,10 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label22.Location = new System.Drawing.Point(350, 170);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(161, 15);
+            this.label22.Size = new System.Drawing.Size(152, 13);
             this.label22.TabIndex = 40;
             this.label22.Text = "Intercom Speech Time (s)";
             // 
@@ -900,7 +900,7 @@
             0,
             0});
             this.icomCdNUpDown.Name = "icomCdNUpDown";
-            this.icomCdNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.icomCdNUpDown.Size = new System.Drawing.Size(52, 16);
             this.icomCdNUpDown.TabIndex = 39;
             this.icomCdNUpDown.Value = new decimal(new int[] {
             120,
@@ -911,10 +911,10 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label21.Location = new System.Drawing.Point(350, 145);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(147, 15);
+            this.label21.Size = new System.Drawing.Size(133, 13);
             this.label21.TabIndex = 38;
             this.label21.Text = "Intercom Cooldown (s)";
             // 
@@ -922,12 +922,12 @@
             // 
             this.instabilityLabel.AccessibleName = "UnstableWarn";
             this.instabilityLabel.AutoSize = true;
-            this.instabilityLabel.Font = new System.Drawing.Font("Noto Sans", 7.249999F, System.Drawing.FontStyle.Bold);
+            this.instabilityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.249999F, System.Drawing.FontStyle.Bold);
             this.instabilityLabel.ForeColor = System.Drawing.Color.Firebrick;
             this.instabilityLabel.Location = new System.Drawing.Point(146, 3);
             this.instabilityLabel.Name = "instabilityLabel";
             this.instabilityLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.instabilityLabel.Size = new System.Drawing.Size(172, 14);
+            this.instabilityLabel.Size = new System.Drawing.Size(166, 13);
             this.instabilityLabel.TabIndex = 37;
             this.instabilityLabel.Text = "Can cause server instability.";
             this.instabilityLabel.Visible = false;
@@ -935,10 +935,10 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label16.Location = new System.Drawing.Point(6, 167);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(193, 15);
+            this.label16.Size = new System.Drawing.Size(181, 13);
             this.label16.TabIndex = 36;
             this.label16.Text = "CI Round Start Spawn Percent";
             // 
@@ -958,7 +958,7 @@
             0,
             0});
             this.ciSpawnChanceAtStartNUpDown.Name = "ciSpawnChanceAtStartNUpDown";
-            this.ciSpawnChanceAtStartNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.ciSpawnChanceAtStartNUpDown.Size = new System.Drawing.Size(52, 16);
             this.ciSpawnChanceAtStartNUpDown.TabIndex = 35;
             this.ciSpawnChanceAtStartNUpDown.Value = new decimal(new int[] {
             10,
@@ -982,7 +982,7 @@
             0,
             0});
             this.ciSpawnChanceNUpDown.Name = "ciSpawnChanceNUpDown";
-            this.ciSpawnChanceNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.ciSpawnChanceNUpDown.Size = new System.Drawing.Size(52, 16);
             this.ciSpawnChanceNUpDown.TabIndex = 34;
             this.ciSpawnChanceNUpDown.Value = new decimal(new int[] {
             35,
@@ -993,21 +993,21 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label17.Location = new System.Drawing.Point(6, 142);
             this.label17.Name = "label17";
             this.label17.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label17.Size = new System.Drawing.Size(129, 15);
+            this.label17.Size = new System.Drawing.Size(123, 13);
             this.label17.TabIndex = 33;
             this.label17.Text = "CI Respawn Percent";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label14.Location = new System.Drawing.Point(6, 117);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(92, 15);
+            this.label14.Size = new System.Drawing.Size(89, 13);
             this.label14.TabIndex = 32;
             this.label14.Text = "CI Spawn Size";
             // 
@@ -1027,7 +1027,7 @@
             0,
             0});
             this.ciSpawnSizeNUpDown.Name = "ciSpawnSizeNUpDown";
-            this.ciSpawnSizeNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.ciSpawnSizeNUpDown.Size = new System.Drawing.Size(52, 16);
             this.ciSpawnSizeNUpDown.TabIndex = 31;
             this.ciSpawnSizeNUpDown.Value = new decimal(new int[] {
             15,
@@ -1051,7 +1051,7 @@
             0,
             0});
             this.mtfSpawnSizeNUpDown.Name = "mtfSpawnSizeNUpDown";
-            this.mtfSpawnSizeNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.mtfSpawnSizeNUpDown.Size = new System.Drawing.Size(52, 16);
             this.mtfSpawnSizeNUpDown.TabIndex = 30;
             this.mtfSpawnSizeNUpDown.Value = new decimal(new int[] {
             15,
@@ -1062,10 +1062,10 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label15.Location = new System.Drawing.Point(6, 92);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(104, 15);
+            this.label15.Size = new System.Drawing.Size(102, 13);
             this.label15.TabIndex = 29;
             this.label15.Text = "MTF Spawn Size";
             // 
@@ -1074,7 +1074,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(251, 68);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(12, 15);
+            this.label13.Size = new System.Drawing.Size(11, 13);
             this.label13.TabIndex = 28;
             this.label13.Text = "-";
             // 
@@ -1094,7 +1094,7 @@
             0,
             0});
             this.maxSpawnTimeNUpDown.Name = "maxSpawnTimeNUpDown";
-            this.maxSpawnTimeNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.maxSpawnTimeNUpDown.Size = new System.Drawing.Size(52, 16);
             this.maxSpawnTimeNUpDown.TabIndex = 27;
             this.maxSpawnTimeNUpDown.Value = new decimal(new int[] {
             350,
@@ -1118,7 +1118,7 @@
             0,
             0});
             this.minSpawnTimeNUpDown.Name = "minSpawnTimeNUpDown";
-            this.minSpawnTimeNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.minSpawnTimeNUpDown.Size = new System.Drawing.Size(52, 16);
             this.minSpawnTimeNUpDown.TabIndex = 26;
             this.minSpawnTimeNUpDown.Value = new decimal(new int[] {
             280,
@@ -1129,10 +1129,10 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label12.Location = new System.Drawing.Point(7, 68);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(127, 15);
+            this.label12.Size = new System.Drawing.Size(123, 13);
             this.label12.TabIndex = 25;
             this.label12.Text = "MTF Spawn Time (s)";
             // 
@@ -1147,7 +1147,7 @@
             0,
             0});
             this.maxPlayersNUpDown.Name = "maxPlayersNUpDown";
-            this.maxPlayersNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.maxPlayersNUpDown.Size = new System.Drawing.Size(52, 16);
             this.maxPlayersNUpDown.TabIndex = 20;
             this.maxPlayersNUpDown.Value = new decimal(new int[] {
             20,
@@ -1159,10 +1159,10 @@
             // MaxPlayersLabel
             // 
             this.MaxPlayersLabel.AutoSize = true;
-            this.MaxPlayersLabel.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.MaxPlayersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.MaxPlayersLabel.Location = new System.Drawing.Point(6, 17);
             this.MaxPlayersLabel.Name = "MaxPlayersLabel";
-            this.MaxPlayersLabel.Size = new System.Drawing.Size(81, 15);
+            this.MaxPlayersLabel.Size = new System.Drawing.Size(75, 13);
             this.MaxPlayersLabel.TabIndex = 19;
             this.MaxPlayersLabel.Text = "Max Players";
             // 
@@ -1192,10 +1192,10 @@
             this.tabPage4.Controls.Add(this.afkKickCheckBox);
             this.tabPage4.Controls.Add(this.label19);
             this.tabPage4.ImageIndex = 3;
-            this.tabPage4.Location = new System.Drawing.Point(4, 27);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(670, 210);
+            this.tabPage4.Size = new System.Drawing.Size(670, 212);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Security";
             // 
@@ -1203,12 +1203,12 @@
             // 
             this.ddosWarnLabel.AccessibleName = "UnstableWarn";
             this.ddosWarnLabel.AutoSize = true;
-            this.ddosWarnLabel.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.ddosWarnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.ddosWarnLabel.ForeColor = System.Drawing.Color.Firebrick;
             this.ddosWarnLabel.Location = new System.Drawing.Point(224, 142);
             this.ddosWarnLabel.Name = "ddosWarnLabel";
             this.ddosWarnLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ddosWarnLabel.Size = new System.Drawing.Size(163, 15);
+            this.ddosWarnLabel.Size = new System.Drawing.Size(149, 13);
             this.ddosWarnLabel.TabIndex = 39;
             this.ddosWarnLabel.Text = "DDoS Crash Vulnerability";
             this.ddosWarnLabel.Visible = false;
@@ -1221,26 +1221,26 @@
             this.queryPwTextBox.Name = "queryPwTextBox";
             this.queryPwTextBox.PasswordChar = '*';
             this.queryPwTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.queryPwTextBox.Size = new System.Drawing.Size(156, 22);
+            this.queryPwTextBox.Size = new System.Drawing.Size(156, 20);
             this.queryPwTextBox.TabIndex = 29;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label46.Location = new System.Drawing.Point(8, 142);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(179, 15);
+            this.label46.Size = new System.Drawing.Size(167, 13);
             this.label46.TabIndex = 27;
             this.label46.Text = "Kick Players over Rate Limit";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label40.Location = new System.Drawing.Point(8, 118);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(192, 15);
+            this.label40.Size = new System.Drawing.Size(174, 13);
             this.label40.TabIndex = 27;
             this.label40.Text = "Allow Damage from Protected";
             // 
@@ -1255,7 +1255,7 @@
             0,
             0});
             this.spawnProtTimeNUpDown.Name = "spawnProtTimeNUpDown";
-            this.spawnProtTimeNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.spawnProtTimeNUpDown.Size = new System.Drawing.Size(52, 16);
             this.spawnProtTimeNUpDown.TabIndex = 28;
             this.spawnProtTimeNUpDown.Value = new decimal(new int[] {
             30,
@@ -1266,10 +1266,10 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label39.Location = new System.Drawing.Point(8, 93);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(167, 15);
+            this.label39.Size = new System.Drawing.Size(156, 13);
             this.label39.TabIndex = 27;
             this.label39.Text = "Spawn Protection Time (s)";
             // 
@@ -1284,16 +1284,16 @@
             0,
             0});
             this.queryPortShiftNUpDown.Name = "queryPortShiftNUpDown";
-            this.queryPortShiftNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.queryPortShiftNUpDown.Size = new System.Drawing.Size(52, 16);
             this.queryPortShiftNUpDown.TabIndex = 28;
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label43.Location = new System.Drawing.Point(282, 69);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(108, 15);
+            this.label43.Size = new System.Drawing.Size(98, 13);
             this.label43.TabIndex = 27;
             this.label43.Text = "Query Password";
             // 
@@ -1308,7 +1308,7 @@
             0,
             0});
             this.afktimeNUpDown.Name = "afktimeNUpDown";
-            this.afktimeNUpDown.Size = new System.Drawing.Size(52, 18);
+            this.afktimeNUpDown.Size = new System.Drawing.Size(52, 16);
             this.afktimeNUpDown.TabIndex = 28;
             this.afktimeNUpDown.Value = new decimal(new int[] {
             90,
@@ -1319,20 +1319,20 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label42.Location = new System.Drawing.Point(282, 43);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(109, 15);
+            this.label42.Size = new System.Drawing.Size(97, 13);
             this.label42.TabIndex = 27;
             this.label42.Text = "Query Port Shift";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label20.Location = new System.Drawing.Point(8, 43);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(81, 15);
+            this.label20.Size = new System.Drawing.Size(79, 13);
             this.label20.TabIndex = 27;
             this.label20.Text = "AFK Time (s)";
             // 
@@ -1374,10 +1374,10 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label38.Location = new System.Drawing.Point(8, 69);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(116, 15);
+            this.label38.Size = new System.Drawing.Size(107, 13);
             this.label38.TabIndex = 25;
             this.label38.Text = "Spawn Protection";
             // 
@@ -1393,10 +1393,10 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label48.Location = new System.Drawing.Point(8, 166);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(90, 15);
+            this.label48.Size = new System.Drawing.Size(84, 13);
             this.label48.TabIndex = 25;
             this.label48.Text = "Block Proxies";
             // 
@@ -1414,10 +1414,10 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label44.Location = new System.Drawing.Point(282, 96);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(76, 15);
+            this.label44.Size = new System.Drawing.Size(70, 13);
             this.label44.TabIndex = 25;
             this.label44.Text = "IPv6 Query";
             // 
@@ -1436,10 +1436,10 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label41.Location = new System.Drawing.Point(282, 17);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(90, 15);
+            this.label41.Size = new System.Drawing.Size(83, 13);
             this.label41.TabIndex = 25;
             this.label41.Text = "Enable Query";
             // 
@@ -1458,20 +1458,20 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label19.Location = new System.Drawing.Point(8, 17);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 15);
+            this.label19.Size = new System.Drawing.Size(59, 13);
             this.label19.TabIndex = 25;
             this.label19.Text = "AFK Kick";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.label9.Location = new System.Drawing.Point(153, 289);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(176, 15);
+            this.label9.Size = new System.Drawing.Size(174, 13);
             this.label9.TabIndex = 8;
             this.label9.Text = "by Veljko \"k0vac\" Kovacevic";
             // 
@@ -1485,7 +1485,7 @@
             // generateLabel
             // 
             this.generateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.generateLabel.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.generateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.generateLabel.ForeColor = System.Drawing.Color.Green;
             this.generateLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.generateLabel.Location = new System.Drawing.Point(319, 289);
@@ -1501,10 +1501,10 @@
             // 
             this.donateLinkLabel.AutoSize = true;
             this.donateLinkLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.donateLinkLabel.Font = new System.Drawing.Font("Noto Sans", 8.249999F, System.Drawing.FontStyle.Bold);
+            this.donateLinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.donateLinkLabel.Location = new System.Drawing.Point(153, 269);
             this.donateLinkLabel.Name = "donateLinkLabel";
-            this.donateLinkLabel.Size = new System.Drawing.Size(51, 15);
+            this.donateLinkLabel.Size = new System.Drawing.Size(48, 13);
             this.donateLinkLabel.TabIndex = 12;
             this.donateLinkLabel.TabStop = true;
             this.donateLinkLabel.Text = "Donate";
@@ -1561,8 +1561,8 @@
             this.Name = "OmicronMainWindow";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Omicron - Gameplay Config Generator";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OmicronMainWindow_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
