@@ -137,6 +137,7 @@ namespace Omicron_Pi
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backButton = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.generalTabPage.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -170,9 +171,9 @@ namespace Omicron_Pi
             this.generalTabPage.Controls.Add(this.label40);
             this.generalTabPage.Controls.Add(this.createNewConfigButton);
             this.generalTabPage.Controls.Add(this.openExistingConfigButton);
-            this.generalTabPage.Location = new System.Drawing.Point(4, 24);
+            this.generalTabPage.Location = new System.Drawing.Point(4, 22);
             this.generalTabPage.Name = "generalTabPage";
-            this.generalTabPage.Size = new System.Drawing.Size(1104, 828);
+            this.generalTabPage.Size = new System.Drawing.Size(1104, 830);
             this.generalTabPage.TabIndex = 3;
             this.generalTabPage.Text = "General";
             this.generalTabPage.UseVisualStyleBackColor = true;
@@ -182,7 +183,7 @@ namespace Omicron_Pi
             this.label42.AutoSize = true;
             this.label42.Location = new System.Drawing.Point(4, 803);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(630, 15);
+            this.label42.Size = new System.Drawing.Size(574, 13);
             this.label42.TabIndex = 7;
             this.label42.Text = "If you have any issues with the program or you just wanna make a comment you can " +
     "contact on Discord @ Takail#6969";
@@ -190,20 +191,20 @@ namespace Omicron_Pi
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Noto Sans", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.Location = new System.Drawing.Point(7, 11);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(205, 47);
+            this.label41.Size = new System.Drawing.Size(191, 39);
             this.label41.TabIndex = 6;
             this.label41.Text = "Omicron PI";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.Location = new System.Drawing.Point(15, 58);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(921, 40);
+            this.label40.Size = new System.Drawing.Size(871, 36);
             this.label40.TabIndex = 5;
             this.label40.Text = resources.GetString("label40.Text");
             // 
@@ -241,11 +242,11 @@ namespace Omicron_Pi
             this.tabPage1.Controls.Add(this.enable_banteam_access);
             this.tabPage1.Controls.Add(this.enable_manager_access);
             this.tabPage1.Controls.Add(this.enable_staff_access);
-            this.tabPage1.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1104, 828);
+            this.tabPage1.Size = new System.Drawing.Size(1104, 830);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General Settings";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -253,10 +254,10 @@ namespace Omicron_Pi
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(17, 391);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(597, 15);
+            this.label7.Size = new System.Drawing.Size(520, 13);
             this.label7.TabIndex = 11;
             this.label7.Text = "This setting will allow all global moderators to join your server regardless of a" +
     "n geo restrictions you might have.";
@@ -264,10 +265,10 @@ namespace Omicron_Pi
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(17, 332);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(434, 15);
+            this.label6.Size = new System.Drawing.Size(378, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "This setting will allow all global moderators to join your server even when its f" +
     "ull.";
@@ -275,10 +276,10 @@ namespace Omicron_Pi
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(17, 272);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(433, 15);
+            this.label5.Size = new System.Drawing.Size(385, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "This setting will allow all global moderators to access your servers RemoteAdmin." +
     "";
@@ -286,11 +287,11 @@ namespace Omicron_Pi
             // enable_banteam_bypass_geoblocking
             // 
             this.enable_banteam_bypass_geoblocking.AutoSize = true;
-            this.enable_banteam_bypass_geoblocking.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enable_banteam_bypass_geoblocking.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enable_banteam_bypass_geoblocking.Location = new System.Drawing.Point(20, 366);
             this.enable_banteam_bypass_geoblocking.Name = "enable_banteam_bypass_geoblocking";
             this.enable_banteam_bypass_geoblocking.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.enable_banteam_bypass_geoblocking.Size = new System.Drawing.Size(262, 19);
+            this.enable_banteam_bypass_geoblocking.Size = new System.Drawing.Size(235, 17);
             this.enable_banteam_bypass_geoblocking.TabIndex = 8;
             this.enable_banteam_bypass_geoblocking.Text = "Allow the ban team to bypass georestrictions";
             this.enable_banteam_bypass_geoblocking.UseVisualStyleBackColor = true;
@@ -299,20 +300,20 @@ namespace Omicron_Pi
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Noto Sans", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 185);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(550, 39);
+            this.label4.Size = new System.Drawing.Size(516, 33);
             this.label4.TabIndex = 7;
             this.label4.Text = "Settings required for server verification";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(17, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(461, 15);
+            this.label3.Size = new System.Drawing.Size(412, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "This setting will allow department managers and the CEO access to your remoteadmi" +
     "n.";
@@ -320,20 +321,20 @@ namespace Omicron_Pi
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Noto Sans", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(251, 39);
+            this.label2.Size = new System.Drawing.Size(237, 33);
             this.label2.TabIndex = 5;
             this.label2.Text = "Optional Settings";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(17, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(659, 15);
+            this.label1.Size = new System.Drawing.Size(587, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "This setting will allow low level studio members such as tech support or SL Disco" +
     "rd moderators to access your remoteadmin.";
@@ -341,11 +342,11 @@ namespace Omicron_Pi
             // enable_banteam_reserved_slots
             // 
             this.enable_banteam_reserved_slots.AutoSize = true;
-            this.enable_banteam_reserved_slots.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enable_banteam_reserved_slots.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enable_banteam_reserved_slots.Location = new System.Drawing.Point(20, 307);
             this.enable_banteam_reserved_slots.Name = "enable_banteam_reserved_slots";
             this.enable_banteam_reserved_slots.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.enable_banteam_reserved_slots.Size = new System.Drawing.Size(229, 19);
+            this.enable_banteam_reserved_slots.Size = new System.Drawing.Size(208, 17);
             this.enable_banteam_reserved_slots.TabIndex = 3;
             this.enable_banteam_reserved_slots.Text = "Give ban team members reserved slots";
             this.enable_banteam_reserved_slots.UseVisualStyleBackColor = true;
@@ -354,11 +355,11 @@ namespace Omicron_Pi
             // enable_banteam_access
             // 
             this.enable_banteam_access.AutoSize = true;
-            this.enable_banteam_access.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enable_banteam_access.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enable_banteam_access.Location = new System.Drawing.Point(20, 247);
             this.enable_banteam_access.Name = "enable_banteam_access";
             this.enable_banteam_access.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.enable_banteam_access.Size = new System.Drawing.Size(219, 19);
+            this.enable_banteam_access.Size = new System.Drawing.Size(204, 17);
             this.enable_banteam_access.TabIndex = 2;
             this.enable_banteam_access.Text = "Allow ban team RemoteAdmin access";
             this.enable_banteam_access.UseVisualStyleBackColor = true;
@@ -367,11 +368,11 @@ namespace Omicron_Pi
             // enable_manager_access
             // 
             this.enable_manager_access.AutoSize = true;
-            this.enable_manager_access.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enable_manager_access.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enable_manager_access.Location = new System.Drawing.Point(20, 119);
             this.enable_manager_access.Name = "enable_manager_access";
             this.enable_manager_access.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.enable_manager_access.Size = new System.Drawing.Size(345, 19);
+            this.enable_manager_access.Size = new System.Drawing.Size(323, 17);
             this.enable_manager_access.TabIndex = 1;
             this.enable_manager_access.Text = "Allow SCP:SL Managers and the CEO  access to remote admin";
             this.enable_manager_access.UseVisualStyleBackColor = true;
@@ -380,11 +381,11 @@ namespace Omicron_Pi
             // enable_staff_access
             // 
             this.enable_staff_access.AutoSize = true;
-            this.enable_staff_access.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enable_staff_access.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enable_staff_access.Location = new System.Drawing.Point(20, 61);
             this.enable_staff_access.Name = "enable_staff_access";
             this.enable_staff_access.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.enable_staff_access.Size = new System.Drawing.Size(246, 19);
+            this.enable_staff_access.Size = new System.Drawing.Size(231, 17);
             this.enable_staff_access.TabIndex = 0;
             this.enable_staff_access.Text = "Allow SCP:SL Staff access to remote admin";
             this.enable_staff_access.UseVisualStyleBackColor = true;
@@ -398,10 +399,10 @@ namespace Omicron_Pi
             this.tabPage2.Controls.Add(this.groupsRemoveButton);
             this.tabPage2.Controls.Add(this.groupsAddButton);
             this.tabPage2.Controls.Add(this.Groups);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1104, 828);
+            this.tabPage2.Size = new System.Drawing.Size(1104, 830);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Groups and Permissions";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -409,10 +410,10 @@ namespace Omicron_Pi
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.Location = new System.Drawing.Point(3, 2);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(60, 20);
+            this.label37.Size = new System.Drawing.Size(58, 18);
             this.label37.TabIndex = 54;
             this.label37.Text = "Groups";
             // 
@@ -430,7 +431,7 @@ namespace Omicron_Pi
             this.groupBox3.Controls.Add(this.label32);
             this.groupBox3.Controls.Add(this.label31);
             this.groupBox3.Controls.Add(this.badgeNameTextBox);
-            this.groupBox3.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(174, 7);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(922, 128);
@@ -447,7 +448,7 @@ namespace Omicron_Pi
             0,
             0});
             this.reqKickPowerNumUD.Name = "reqKickPowerNumUD";
-            this.reqKickPowerNumUD.Size = new System.Drawing.Size(120, 22);
+            this.reqKickPowerNumUD.Size = new System.Drawing.Size(120, 20);
             this.reqKickPowerNumUD.TabIndex = 15;
             this.reqKickPowerNumUD.ValueChanged += new System.EventHandler(this.reqKickPowerNumUD_ValueChanged);
             // 
@@ -460,7 +461,7 @@ namespace Omicron_Pi
             0,
             0});
             this.kickPowerNumUD.Name = "kickPowerNumUD";
-            this.kickPowerNumUD.Size = new System.Drawing.Size(120, 22);
+            this.kickPowerNumUD.Size = new System.Drawing.Size(120, 20);
             this.kickPowerNumUD.TabIndex = 14;
             this.kickPowerNumUD.ValueChanged += new System.EventHandler(this.kickPowerNumUD_ValueChanged);
             // 
@@ -494,14 +495,14 @@ namespace Omicron_Pi
             "Pumpkin"});
             this.badgeColourComboBox.Location = new System.Drawing.Point(148, 62);
             this.badgeColourComboBox.Name = "badgeColourComboBox";
-            this.badgeColourComboBox.Size = new System.Drawing.Size(173, 23);
+            this.badgeColourComboBox.Size = new System.Drawing.Size(173, 21);
             this.badgeColourComboBox.TabIndex = 13;
             this.badgeColourComboBox.SelectedIndexChanged += new System.EventHandler(this.badgeColourComboBox_SelectedIndexChanged);
             // 
             // badgeHiddenCheckBox
             // 
             this.badgeHiddenCheckBox.AutoSize = true;
-            this.badgeHiddenCheckBox.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.badgeHiddenCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.badgeHiddenCheckBox.Location = new System.Drawing.Point(749, 98);
             this.badgeHiddenCheckBox.Name = "badgeHiddenCheckBox";
             this.badgeHiddenCheckBox.Size = new System.Drawing.Size(15, 14);
@@ -512,37 +513,37 @@ namespace Omicron_Pi
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(431, 97);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(118, 15);
+            this.label34.Size = new System.Drawing.Size(107, 13);
             this.label34.TabIndex = 11;
             this.label34.Text = "Group Badge Hidden";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(431, 62);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(153, 15);
+            this.label35.Size = new System.Drawing.Size(139, 13);
             this.label35.TabIndex = 10;
             this.label35.Text = "Group Required Kick Power";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(431, 28);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(102, 15);
+            this.label36.Size = new System.Drawing.Size(93, 13);
             this.label36.TabIndex = 9;
             this.label36.Text = "Group Kick Power";
             // 
             // badgeCoverCheckBox
             // 
             this.badgeCoverCheckBox.AutoSize = true;
-            this.badgeCoverCheckBox.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.badgeCoverCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.badgeCoverCheckBox.Location = new System.Drawing.Point(306, 97);
             this.badgeCoverCheckBox.Name = "badgeCoverCheckBox";
             this.badgeCoverCheckBox.Size = new System.Drawing.Size(15, 14);
@@ -553,40 +554,40 @@ namespace Omicron_Pi
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(25, 97);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(111, 15);
+            this.label33.Size = new System.Drawing.Size(101, 13);
             this.label33.TabIndex = 5;
             this.label33.Text = "Group Badge Cover";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(25, 62);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(116, 15);
+            this.label32.Size = new System.Drawing.Size(103, 13);
             this.label32.TabIndex = 4;
             this.label32.Text = "Group Badge Colour";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(25, 28);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(77, 15);
+            this.label31.Size = new System.Drawing.Size(70, 13);
             this.label31.TabIndex = 3;
             this.label31.Text = "Group Badge";
             // 
             // badgeNameTextBox
             // 
-            this.badgeNameTextBox.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.badgeNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.badgeNameTextBox.Location = new System.Drawing.Point(148, 25);
             this.badgeNameTextBox.MaxLength = 25;
             this.badgeNameTextBox.Name = "badgeNameTextBox";
-            this.badgeNameTextBox.Size = new System.Drawing.Size(173, 22);
+            this.badgeNameTextBox.Size = new System.Drawing.Size(173, 20);
             this.badgeNameTextBox.TabIndex = 0;
             this.badgeNameTextBox.TextChanged += new System.EventHandler(this.badgeNameTextBox_TextChanged);
             // 
@@ -640,7 +641,7 @@ namespace Omicron_Pi
             this.permissionsBox.Controls.Add(this.label10);
             this.permissionsBox.Controls.Add(this.label12);
             this.permissionsBox.Controls.Add(this.label11);
-            this.permissionsBox.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.permissionsBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.permissionsBox.Location = new System.Drawing.Point(174, 141);
             this.permissionsBox.Name = "permissionsBox";
             this.permissionsBox.Size = new System.Drawing.Size(922, 684);
@@ -681,10 +682,10 @@ namespace Omicron_Pi
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(431, 570);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(197, 30);
+            this.label30.Size = new System.Drawing.Size(181, 26);
             this.label30.TabIndex = 51;
             this.label30.Text = "AFK Immunity\r\nAllows you to bypass the AFK kicker.";
             // 
@@ -701,10 +702,10 @@ namespace Omicron_Pi
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(431, 522);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(212, 30);
+            this.label29.Size = new System.Drawing.Size(190, 26);
             this.label29.TabIndex = 50;
             this.label29.Text = "Noclip\r\nAllows you to use the noclip command.";
             // 
@@ -721,10 +722,10 @@ namespace Omicron_Pi
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.Location = new System.Drawing.Point(431, 462);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(429, 45);
+            this.label28.Size = new System.Drawing.Size(390, 39);
             this.label28.TabIndex = 49;
             this.label28.Text = "Player sensitive data access\r\nAllows you to see sensitive player data such as a p" +
     "layers auth token and IP in the\r\nrequest section of remoteadmin.";
@@ -742,10 +743,10 @@ namespace Omicron_Pi
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(431, 410);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(192, 30);
+            this.label27.Size = new System.Drawing.Size(174, 26);
             this.label27.TabIndex = 48;
             this.label27.Text = "Broadcasting\r\nAllows you to use the bc command.";
             // 
@@ -762,10 +763,10 @@ namespace Omicron_Pi
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(431, 357);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(379, 30);
+            this.label26.Size = new System.Drawing.Size(330, 26);
             this.label26.TabIndex = 47;
             this.label26.Text = "Server Configs\r\nAllows you to edit config_gameplay settings from within remoteadm" +
     "in.";
@@ -783,7 +784,7 @@ namespace Omicron_Pi
             // AFKImmunity
             // 
             this.AFKImmunity.AutoSize = true;
-            this.AFKImmunity.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AFKImmunity.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AFKImmunity.Location = new System.Drawing.Point(410, 573);
             this.AFKImmunity.Name = "AFKImmunity";
             this.AFKImmunity.Size = new System.Drawing.Size(15, 14);
@@ -804,7 +805,7 @@ namespace Omicron_Pi
             // Noclip
             // 
             this.Noclip.AutoSize = true;
-            this.Noclip.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Noclip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Noclip.Location = new System.Drawing.Point(410, 525);
             this.Noclip.Name = "Noclip";
             this.Noclip.Size = new System.Drawing.Size(15, 14);
@@ -825,7 +826,7 @@ namespace Omicron_Pi
             // PlayerSensitiveDataAccess
             // 
             this.PlayerSensitiveDataAccess.AutoSize = true;
-            this.PlayerSensitiveDataAccess.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayerSensitiveDataAccess.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayerSensitiveDataAccess.Location = new System.Drawing.Point(410, 465);
             this.PlayerSensitiveDataAccess.Name = "PlayerSensitiveDataAccess";
             this.PlayerSensitiveDataAccess.Size = new System.Drawing.Size(15, 14);
@@ -846,10 +847,10 @@ namespace Omicron_Pi
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(431, 306);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(352, 30);
+            this.label25.Size = new System.Drawing.Size(313, 26);
             this.label25.TabIndex = 42;
             this.label25.Text = "View hidden badges\r\nAllows you to view the badges of people with their badge hidd" +
     "en.";
@@ -867,10 +868,10 @@ namespace Omicron_Pi
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(431, 243);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(483, 45);
+            this.label24.Size = new System.Drawing.Size(432, 39);
             this.label24.TabIndex = 41;
             this.label24.Text = "Server Console Commands\r\nAllows you to execute commands as the server console by " +
     "prefixing your command with /. \r\nBE CAREFUL WITH WHO YOU GIVE THIS PERM TO.";
@@ -878,7 +879,7 @@ namespace Omicron_Pi
             // GameplayData
             // 
             this.GameplayData.AutoSize = true;
-            this.GameplayData.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GameplayData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GameplayData.Location = new System.Drawing.Point(6, 624);
             this.GameplayData.Name = "GameplayData";
             this.GameplayData.Size = new System.Drawing.Size(15, 14);
@@ -889,7 +890,7 @@ namespace Omicron_Pi
             // SetGroup
             // 
             this.SetGroup.AutoSize = true;
-            this.SetGroup.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SetGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SetGroup.Location = new System.Drawing.Point(6, 568);
             this.SetGroup.Name = "SetGroup";
             this.SetGroup.Size = new System.Drawing.Size(15, 14);
@@ -900,10 +901,10 @@ namespace Omicron_Pi
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(431, 192);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(381, 30);
+            this.label23.Size = new System.Drawing.Size(338, 26);
             this.label23.TabIndex = 40;
             this.label23.Text = "Permission Management\r\nAllows you to use the PM command ingame to manipulate perm" +
     "issions.";
@@ -911,7 +912,7 @@ namespace Omicron_Pi
             // FacilityManagement
             // 
             this.FacilityManagement.AutoSize = true;
-            this.FacilityManagement.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FacilityManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FacilityManagement.Location = new System.Drawing.Point(410, 78);
             this.FacilityManagement.Name = "FacilityManagement";
             this.FacilityManagement.Size = new System.Drawing.Size(15, 14);
@@ -922,10 +923,10 @@ namespace Omicron_Pi
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(431, 131);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(341, 45);
+            this.label22.Size = new System.Drawing.Size(307, 39);
             this.label22.TabIndex = 39;
             this.label22.Text = "Player Management\r\nAllows you to set players HP, enable/disable god mode, telepor" +
     "t\r\nplayers, mute/unmute players, and timeout/reset the intercom.";
@@ -933,7 +934,7 @@ namespace Omicron_Pi
             // Overwatch
             // 
             this.Overwatch.AutoSize = true;
-            this.Overwatch.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Overwatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Overwatch.Location = new System.Drawing.Point(410, 23);
             this.Overwatch.Name = "Overwatch";
             this.Overwatch.Size = new System.Drawing.Size(15, 14);
@@ -944,10 +945,10 @@ namespace Omicron_Pi
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(431, 75);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(321, 45);
+            this.label21.Size = new System.Drawing.Size(286, 39);
             this.label21.TabIndex = 38;
             this.label21.Text = "Facility Management\r\nAllows you to use bypass, door management, and intercom \r\nti" +
     "meout/reset commands.";
@@ -955,7 +956,7 @@ namespace Omicron_Pi
             // PlayersManagement
             // 
             this.PlayersManagement.AutoSize = true;
-            this.PlayersManagement.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayersManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayersManagement.Location = new System.Drawing.Point(410, 134);
             this.PlayersManagement.Name = "PlayersManagement";
             this.PlayersManagement.Size = new System.Drawing.Size(15, 14);
@@ -966,17 +967,17 @@ namespace Omicron_Pi
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(431, 22);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(280, 30);
+            this.label20.Size = new System.Drawing.Size(253, 26);
             this.label20.TabIndex = 37;
             this.label20.Text = "Overwatch\r\nAllows you to make use of the overwatch command.";
             // 
             // PermissionsManagement
             // 
             this.PermissionsManagement.AutoSize = true;
-            this.PermissionsManagement.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PermissionsManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PermissionsManagement.Location = new System.Drawing.Point(410, 195);
             this.PermissionsManagement.Name = "PermissionsManagement";
             this.PermissionsManagement.Size = new System.Drawing.Size(15, 14);
@@ -987,10 +988,10 @@ namespace Omicron_Pi
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(25, 624);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(259, 45);
+            this.label19.Size = new System.Drawing.Size(239, 39);
             this.label19.TabIndex = 36;
             this.label19.Text = "Gameplay Data\r\nAllows you to data such as HP and class with the\r\ndata request but" +
     "ton.";
@@ -998,7 +999,7 @@ namespace Omicron_Pi
             // ServerConsoleCommands
             // 
             this.ServerConsoleCommands.AutoSize = true;
-            this.ServerConsoleCommands.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServerConsoleCommands.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServerConsoleCommands.Location = new System.Drawing.Point(410, 247);
             this.ServerConsoleCommands.Name = "ServerConsoleCommands";
             this.ServerConsoleCommands.Size = new System.Drawing.Size(15, 14);
@@ -1009,10 +1010,10 @@ namespace Omicron_Pi
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(25, 567);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(340, 45);
+            this.label18.Size = new System.Drawing.Size(301, 39);
             this.label18.TabIndex = 35;
             this.label18.Text = "Set Group\r\nAllows you to change players permission group ingame via the \r\npm comm" +
     "and.";
@@ -1020,7 +1021,7 @@ namespace Omicron_Pi
             // ViewHiddenBadges
             // 
             this.ViewHiddenBadges.AutoSize = true;
-            this.ViewHiddenBadges.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewHiddenBadges.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewHiddenBadges.Location = new System.Drawing.Point(410, 309);
             this.ViewHiddenBadges.Name = "ViewHiddenBadges";
             this.ViewHiddenBadges.Size = new System.Drawing.Size(15, 14);
@@ -1031,17 +1032,17 @@ namespace Omicron_Pi
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(25, 516);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(285, 30);
+            this.label17.Size = new System.Drawing.Size(252, 26);
             this.label17.TabIndex = 34;
             this.label17.Text = "Round Events\r\nAllows you to force start, lock, and restart the round.";
             // 
             // Broadcasting
             // 
             this.Broadcasting.AutoSize = true;
-            this.Broadcasting.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Broadcasting.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Broadcasting.Location = new System.Drawing.Point(410, 413);
             this.Broadcasting.Name = "Broadcasting";
             this.Broadcasting.Size = new System.Drawing.Size(15, 14);
@@ -1052,17 +1053,17 @@ namespace Omicron_Pi
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(25, 463);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(218, 30);
+            this.label16.Size = new System.Drawing.Size(198, 26);
             this.label16.TabIndex = 33;
             this.label16.Text = "Respawn Events\r\nAllows you to force an MTF or CI spawn.";
             // 
             // ServerConfigs
             // 
             this.ServerConfigs.AutoSize = true;
-            this.ServerConfigs.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServerConfigs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServerConfigs.Location = new System.Drawing.Point(410, 360);
             this.ServerConfigs.Name = "ServerConfigs";
             this.ServerConfigs.Size = new System.Drawing.Size(15, 14);
@@ -1073,86 +1074,86 @@ namespace Omicron_Pi
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(27, 415);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(262, 30);
+            this.label15.Size = new System.Drawing.Size(234, 26);
             this.label15.TabIndex = 32;
             this.label15.Text = "Warhead Events\r\nAllows you start stop and detonate the warhead.";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(25, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(223, 30);
+            this.label8.Size = new System.Drawing.Size(199, 26);
             this.label8.TabIndex = 25;
             this.label8.Text = "Kicking and short term banning\r\nAllows kicking and banning up to 1 hour.";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(25, 358);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(149, 30);
+            this.label14.Size = new System.Drawing.Size(133, 26);
             this.label14.TabIndex = 31;
             this.label14.Text = "Give items\r\nAllows you to spawn items.";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(25, 75);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(154, 30);
+            this.label9.Size = new System.Drawing.Size(137, 26);
             this.label9.TabIndex = 26;
             this.label9.Text = "Banning up to one day\r\nAllows banning up to 24hrs.";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(25, 305);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(235, 30);
+            this.label13.Size = new System.Drawing.Size(214, 26);
             this.label13.TabIndex = 30;
             this.label13.Text = "Forceclass without restrictions\r\nAllows you to forceclass others to any class.";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(25, 129);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(150, 30);
+            this.label10.Size = new System.Drawing.Size(134, 26);
             this.label10.TabIndex = 27;
             this.label10.Text = "Long term banning\r\nAllows banning over 24hrs.";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(25, 237);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(264, 30);
+            this.label12.Size = new System.Drawing.Size(236, 26);
             this.label12.TabIndex = 29;
             this.label12.Text = "Forceclass to spectator\r\nAllows you to forceclass others to spectator only.";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(25, 182);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(181, 30);
+            this.label11.Size = new System.Drawing.Size(162, 26);
             this.label11.TabIndex = 28;
             this.label11.Text = "Forceclass self\r\nAllows you to forceclass yourself.";
             // 
             // groupsRemoveButton
             // 
-            this.groupsRemoveButton.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupsRemoveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupsRemoveButton.Location = new System.Drawing.Point(7, 801);
             this.groupsRemoveButton.Name = "groupsRemoveButton";
             this.groupsRemoveButton.Size = new System.Drawing.Size(161, 22);
@@ -1163,7 +1164,7 @@ namespace Omicron_Pi
             // 
             // groupsAddButton
             // 
-            this.groupsAddButton.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupsAddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupsAddButton.Location = new System.Drawing.Point(7, 778);
             this.groupsAddButton.Name = "groupsAddButton";
             this.groupsAddButton.Size = new System.Drawing.Size(161, 22);
@@ -1174,12 +1175,12 @@ namespace Omicron_Pi
             // 
             // Groups
             // 
-            this.Groups.Font = new System.Drawing.Font("Noto Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Groups.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Groups.FormattingEnabled = true;
-            this.Groups.ItemHeight = 18;
+            this.Groups.ItemHeight = 16;
             this.Groups.Location = new System.Drawing.Point(6, 25);
             this.Groups.Name = "Groups";
-            this.Groups.Size = new System.Drawing.Size(162, 742);
+            this.Groups.Size = new System.Drawing.Size(162, 740);
             this.Groups.TabIndex = 0;
             this.Groups.SelectedIndexChanged += new System.EventHandler(this.Groups_SelectedIndexChanged);
             this.Groups.DoubleClick += new System.EventHandler(this.Groups_DoubleClick);
@@ -1199,9 +1200,9 @@ namespace Omicron_Pi
             this.tabPage3.Controls.Add(this.assignmentGroupsCombo);
             this.tabPage3.Controls.Add(this.steamAvatar);
             this.tabPage3.Controls.Add(this.Users);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1104, 828);
+            this.tabPage3.Size = new System.Drawing.Size(1104, 830);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Role Assignment";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1209,10 +1210,10 @@ namespace Omicron_Pi
             // steamUrlLabel
             // 
             this.steamUrlLabel.AutoSize = true;
-            this.steamUrlLabel.Font = new System.Drawing.Font("Noto Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.steamUrlLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.steamUrlLabel.Location = new System.Drawing.Point(199, 514);
             this.steamUrlLabel.Name = "steamUrlLabel";
-            this.steamUrlLabel.Size = new System.Drawing.Size(105, 26);
+            this.steamUrlLabel.Size = new System.Drawing.Size(99, 24);
             this.steamUrlLabel.TabIndex = 67;
             this.steamUrlLabel.TabStop = true;
             this.steamUrlLabel.Text = "SteamURL";
@@ -1223,7 +1224,7 @@ namespace Omicron_Pi
             this.showSteamInfoCheckBox.AutoSize = true;
             this.showSteamInfoCheckBox.Location = new System.Drawing.Point(204, 256);
             this.showSteamInfoCheckBox.Name = "showSteamInfoCheckBox";
-            this.showSteamInfoCheckBox.Size = new System.Drawing.Size(242, 19);
+            this.showSteamInfoCheckBox.Size = new System.Drawing.Size(220, 17);
             this.showSteamInfoCheckBox.TabIndex = 66;
             this.showSteamInfoCheckBox.Text = "Show Steam Info. (Will slow things down)";
             this.showSteamInfoCheckBox.UseVisualStyleBackColor = true;
@@ -1243,10 +1244,10 @@ namespace Omicron_Pi
             // steamNameLabel
             // 
             this.steamNameLabel.AutoSize = true;
-            this.steamNameLabel.Font = new System.Drawing.Font("Noto Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.steamNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.steamNameLabel.Location = new System.Drawing.Point(199, 488);
             this.steamNameLabel.Name = "steamNameLabel";
-            this.steamNameLabel.Size = new System.Drawing.Size(128, 26);
+            this.steamNameLabel.Size = new System.Drawing.Size(119, 24);
             this.steamNameLabel.TabIndex = 63;
             this.steamNameLabel.Text = "Steam Name";
             // 
@@ -1257,7 +1258,7 @@ namespace Omicron_Pi
             this.changeGroupCombo.FormattingEnabled = true;
             this.changeGroupCombo.Location = new System.Drawing.Point(204, 154);
             this.changeGroupCombo.Name = "changeGroupCombo";
-            this.changeGroupCombo.Size = new System.Drawing.Size(203, 23);
+            this.changeGroupCombo.Size = new System.Drawing.Size(203, 21);
             this.changeGroupCombo.TabIndex = 60;
             // 
             // changeUserGroup
@@ -1293,20 +1294,20 @@ namespace Omicron_Pi
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.Location = new System.Drawing.Point(200, 2);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(53, 20);
+            this.label39.Size = new System.Drawing.Size(50, 18);
             this.label39.TabIndex = 56;
             this.label39.Text = "Group";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Noto Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.Location = new System.Drawing.Point(3, 2);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(48, 20);
+            this.label38.Size = new System.Drawing.Size(48, 18);
             this.label38.TabIndex = 55;
             this.label38.Text = "Users";
             // 
@@ -1316,7 +1317,7 @@ namespace Omicron_Pi
             this.assignmentGroupsCombo.FormattingEnabled = true;
             this.assignmentGroupsCombo.Location = new System.Drawing.Point(204, 25);
             this.assignmentGroupsCombo.Name = "assignmentGroupsCombo";
-            this.assignmentGroupsCombo.Size = new System.Drawing.Size(203, 23);
+            this.assignmentGroupsCombo.Size = new System.Drawing.Size(203, 21);
             this.assignmentGroupsCombo.TabIndex = 2;
             this.assignmentGroupsCombo.SelectedIndexChanged += new System.EventHandler(this.assignmentGroupsCombo_SelectedIndexChanged);
             // 
@@ -1334,18 +1335,18 @@ namespace Omicron_Pi
             // 
             // Users
             // 
-            this.Users.Font = new System.Drawing.Font("Noto Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Users.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Users.FormattingEnabled = true;
-            this.Users.ItemHeight = 18;
+            this.Users.ItemHeight = 16;
             this.Users.Location = new System.Drawing.Point(6, 25);
             this.Users.Name = "Users";
-            this.Users.Size = new System.Drawing.Size(192, 796);
+            this.Users.Size = new System.Drawing.Size(192, 788);
             this.Users.TabIndex = 1;
             this.Users.SelectedIndexChanged += new System.EventHandler(this.Users_SelectedIndexChanged);
             // 
             // saveCFGButton
             // 
-            this.saveCFGButton.Font = new System.Drawing.Font("Noto Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveCFGButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveCFGButton.Location = new System.Drawing.Point(946, 865);
             this.saveCFGButton.Name = "saveCFGButton";
             this.saveCFGButton.Size = new System.Drawing.Size(157, 24);
@@ -1356,7 +1357,7 @@ namespace Omicron_Pi
             // 
             // startAgainButton
             // 
-            this.startAgainButton.Font = new System.Drawing.Font("Noto Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startAgainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startAgainButton.Location = new System.Drawing.Point(774, 865);
             this.startAgainButton.Name = "startAgainButton";
             this.startAgainButton.Size = new System.Drawing.Size(157, 24);
@@ -1390,18 +1391,30 @@ namespace Omicron_Pi
             this.pictureBox1.MouseEnter += new System.EventHandler(this.PictureBox1_MouseEnter);
             this.pictureBox1.MouseLeave += new System.EventHandler(this.PictureBox1_MouseLeave);
             // 
+            // backButton
+            // 
+            this.backButton.Location = new System.Drawing.Point(1032, 3);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 23);
+            this.backButton.TabIndex = 15;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // OmicronPiMainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1117, 894);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.startAgainButton);
             this.Controls.Add(this.saveCFGButton);
             this.Controls.Add(this.tabControl);
-            this.Font = new System.Drawing.Font("Noto Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "OmicronPiMainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Omicron Pi";
@@ -1534,6 +1547,7 @@ namespace Omicron_Pi
         private Button enableSteamInfo;
         private CheckBox showSteamInfoCheckBox;
         private LinkLabel steamUrlLabel;
+        private Button backButton;
     }
 }
 
