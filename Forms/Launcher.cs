@@ -29,6 +29,6 @@ namespace OmicronMain
 
         private void omicronGithub_Click(object sender, EventArgs e) => System.Diagnostics.Process.Start("https://github.com/k0vac/Omicron");
 
-        private void Launcher_FormClosed(object sender, FormClosedEventArgs e) => Application.Exit();
+        private void Launcher_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
     }
 }

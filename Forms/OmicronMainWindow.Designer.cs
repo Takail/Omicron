@@ -1574,6 +1574,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Omicron - Gameplay Config Generator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OmicronMainWindow_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

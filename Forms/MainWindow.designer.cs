@@ -1418,6 +1418,7 @@ namespace Omicron_Pi
             this.Name = "OmicronPiMainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Omicron Pi";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OmicronPiMainWindow_FormClosing);
             this.tabControl.ResumeLayout(false);
             this.generalTabPage.ResumeLayout(false);
             this.generalTabPage.PerformLayout();
