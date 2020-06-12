@@ -218,6 +218,27 @@ namespace OmicronMain
             generateLabel.Text = "Files have been generated.";
         }
 
-        private void OmicronMainWindow_FormClosed(object sender, FormClosedEventArgs e) => Application.Exit();
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Launcher omiLauncher = new Launcher();
+            omiLauncher.Show();
+            Hide();
+        }
+
+        private void OmicronMainWindow_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                dynamic closeResult = MessageBox.Show("Are you sure you want to exit?\nUnsaved configs will be deleted.", "Omicron", MessageBoxButtons.YesNo);
+                if (closeResult == DialogResult.No)
+                    e.Cancel = true;
+
+                else if (closeResult == DialogResult.Yes)
+                {
+                    e.Cancel = false;
+                    Application.Exit();
+                }
+            }
+        }
     }
 }
