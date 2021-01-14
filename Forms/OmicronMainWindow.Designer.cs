@@ -1489,10 +1489,10 @@
             this.generateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.249999F, System.Drawing.FontStyle.Bold);
             this.generateLabel.ForeColor = System.Drawing.Color.Green;
             this.generateLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.generateLabel.Location = new System.Drawing.Point(319, 289);
+            this.generateLabel.Location = new System.Drawing.Point(333, 289);
             this.generateLabel.Name = "generateLabel";
             this.generateLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.generateLabel.Size = new System.Drawing.Size(240, 15);
+            this.generateLabel.Size = new System.Drawing.Size(226, 14);
             this.generateLabel.TabIndex = 10;
             this.generateLabel.Text = "Press \'GENERATE\' to generate config files";
             this.generateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

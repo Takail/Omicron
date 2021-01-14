@@ -352,3 +352,12 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 .editorconfig
+.idea/.idea.OmicronMain/.idea/.name
+.idea/.idea.OmicronMain/.idea/codeStyles/codeStyleConfig.xml
+.idea/.idea.OmicronMain/.idea/contentModel.xml
+.idea/.idea.OmicronMain/.idea/indexLayout.xml
+.idea/.idea.OmicronMain/.idea/modules.xml
+.idea/.idea.OmicronMain/.idea/projectSettingsUpdater.xml
+.idea/.idea.OmicronMain/.idea/vcs.xml
+.idea/.idea.OmicronMain/.idea/workspace.xml
+.idea/.idea.OmicronMain/riderModule.iml
