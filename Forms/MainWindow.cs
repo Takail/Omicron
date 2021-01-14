@@ -580,7 +580,7 @@ namespace Omicron_Pi
                     MessageBox.Show($"You didnt include a discriminator. Please add either @steam @discord or @northwood at the end of the ID depending on the ID type. Eg. 76561197960287930@steam");
                     break;
                 }
-                if(Globals.inputResult.Contains("@steam") && getSteamInfo(Globals.inputResult.Split('@')[0]) == null)
+                if(Globals.inputResult.Contains("@steam") && File.Exists("steamapikey") && getSteamInfo(Globals.inputResult.Split('@')[0]) == null)
                 {
                     MessageBox.Show($"That SteamID doesnt exist. Please try again.");
                     continue;
